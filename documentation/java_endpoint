@@ -1,0 +1,85 @@
+
+user:
+========================================
+post: /users/add
+http://localhost:8080/users/create
+
+{
+	"firstName": "name",
+	"lastName": "lastname",
+	"document": "12345678900",
+	"mail": "name@exemple.com",
+	"password": "123456",
+	"balance": "300",
+	"userType": "COMMON"
+}
+
+put: /users/edit
+http://localhost:8080/users/edit
+
+{
+	"firstName": "name",
+	"lastName": "lastname",
+	"document": "12345678900",
+	"mail": "name@exemple.com",
+	"password": "123456",
+	"userType": "COMMON"
+}
+
+delete: /users/delete/id
+http://localhost:8080/users/delete/1
+
+get: http://localhost:8080/users/all
+
+get: http://localhost:8080/users/1
+========================================
+
+transaction:
+========================================
+post: /transaction/make
+http://localhost:8080/transactions/make
+
+{
+	"senderID": 1,
+	"receiverID": 2,
+	"value": 50
+}
+
+post: /transaction/atm
+http://localhost:8080/transactions/atm
+
+{
+	"id": 10,
+	"value": 50,
+	"operation": "DEPOSIT"
+}
+
+post: /transaction/atm
+http://localhost:8080/transactions/atm
+
+{
+	"id": 10,
+	"value": 100,
+	"operation": "WITHDRAW"
+}
+
+get: /transaction/history
+http://localhost:8080/transactions/history
+========================================
+
+api_node
+========================================
+get: /authorize
+http://localhost:9001/api/authorize
+
+post: /notify
+http://localhost:9001/api/notify
+
+{
+	  "mail": "fernanda@example.com",
+  	"message": "Transação recebida com sucesso!"
+}
+========================================
+
+
+      
