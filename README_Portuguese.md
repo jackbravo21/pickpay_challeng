@@ -23,8 +23,8 @@ Notas, tudo isso que eu criei a mais, não foi solicitado:
 - Na pasta "Documentation" do projeto tem o json/insomnia do projeto, com a documentação;
 
 Comandos para rodar o server java:
-mvn spring-boot:run
+- mvn spring-boot:run
 
 Comandos para rodar o server NodeJs de checagem:
-npm install
-nodemon
+- npm install
+- nodemon
