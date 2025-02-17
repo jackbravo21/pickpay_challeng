@@ -22,3 +22,10 @@ All of the following features were additional implementations that were not requ
 - I built an external NodeJS server for handling external validations. Just run "npm install" and start it with "nodemon", and it will be available at "http://localhost:9001".
 - I implemented an ATM service, allowing users to deposit, withdraw, and transfer money as if they were using a real cash machine.
 - The "Documentation" folder in the project contains the Insomnia JSON file, which includes API documentation.
+
+Commands to run the Java server:
+- mvn spring-boot:run
+
+Commands to run the NodeJS validation server:
+- npm install
+- nodemon
