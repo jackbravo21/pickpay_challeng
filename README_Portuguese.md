@@ -21,3 +21,10 @@ Notas, tudo isso que eu criei a mais, não foi solicitado:
 - Criei um server externo com NodeJs para atender as validações externas, basta usar "npm install" e rodar com "nodemon", estará disponivel no "http://localhost:9001";
 - Criei um serviço de ATM (caixa eletronico), onde é possivel simular o depósito e saque do usuário na boca do caixa, além de transferir dinheiro entre eles.
 - Na pasta "Documentation" do projeto tem o json/insomnia do projeto, com a documentação;
+
+Comandos para rodar o server java:
+mvn spring-boot:run
+
+Comandos para rodar o server NodeJs de checagem:
+npm install
+nodemon
